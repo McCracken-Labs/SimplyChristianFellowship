@@ -67,6 +67,16 @@ SIGNUP = '''      <div class="signup">
           </form>
           <p class="signup-note">Signup activates once the newsletter service is connected.</p>
         </div>
+        <details class="rss-help">
+          <summary>New to RSS? Here is how to follow along</summary>
+          <div class="rss-body">
+            <p>RSS is a free way to get new posts automatically, with no account to create if you would rather not. Pick whichever way feels easier.</p>
+            <p><b>Get new posts by email.</b> Open a free service such as Blogtrottr or follow.it, paste the feed address below, and enter your email. Each new Sunday reflection then arrives in your inbox on its own. Nothing to install.</p>
+            <p><b>Use a reader app.</b> Install a free app such as Feedly or Inoreader, tap Add feed or Subscribe, and paste the same address. New posts gather there for whenever you want them.</p>
+            <p><b>The feed address to paste</b><br><code>https://mccracken-labs.github.io/SimplyChristianFellowship/feed.xml</code></p>
+            <p>The daily devotional has its own page that changes every day. The easiest way to follow it is to bookmark the <a href="../devotional.html">Daily Devotional</a> page and open it each morning.</p>
+          </div>
+        </details>
       </div>'''
 
 archive = f'''<!DOCTYPE html>
@@ -92,7 +102,7 @@ archive = f'''<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=4">
+<link rel="stylesheet" href="../assets/style.css?v=5">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -163,7 +173,7 @@ archive = f'''<!DOCTYPE html>
   </div>
 </footer>
 
-<script src="../assets/site.js?v=4"></script>
+<script src="../assets/site.js?v=5"></script>
 </body>
 </html>
 '''

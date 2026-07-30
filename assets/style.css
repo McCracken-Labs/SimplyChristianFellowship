@@ -348,6 +348,27 @@ html[data-theme="dark"] .dev-open, html[data-theme="dark"] .dev-bless { color: v
 }
 .signup-note { font-family: var(--sans); font-size: .72rem; color: var(--ink-soft); margin: .9rem 0 0; }
 
+/* Plain-language RSS help */
+.rss-help { max-width: 34rem; margin: 1.4rem auto 0; text-align: left;
+  border-top: 1px solid var(--line); padding-top: 1rem; }
+.rss-help summary {
+  cursor: pointer; list-style: none; text-align: center;
+  font-family: var(--sans); font-size: .82rem; font-weight: 600; color: var(--teal-dark);
+}
+.rss-help summary::-webkit-details-marker { display: none; }
+.rss-help summary::after { content: " ▾"; color: var(--teal); }
+.rss-help[open] summary::after { content: " ▴"; }
+.rss-help .rss-body { margin-top: 1rem; }
+.rss-help p { font-size: .98rem; line-height: 1.6; color: var(--ink-soft); margin: 0 0 .8rem; }
+.rss-help b { color: var(--ink); }
+.rss-help code {
+  display: inline-block; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .82rem; background: var(--cream-2); border: 1px solid var(--line);
+  border-radius: 8px; padding: .35rem .6rem; margin-top: .2rem; word-break: break-all; color: var(--ink);
+}
+.rss-help ol { margin: 0 0 .8rem; padding-left: 1.2rem; }
+.rss-help li { font-size: .98rem; line-height: 1.55; color: var(--ink-soft); margin-bottom: .3rem; }
+
 /* ---------- Contact / prayer form ---------- */
 .form-wrap { max-width: 40rem; margin: 0 auto; }
 .field { margin-bottom: 1.1rem; text-align: left; }
