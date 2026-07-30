@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Simply Christian Fellowship</title>
+    <link>https://mccracken-labs.github.io/SimplyChristianFellowship/blog/</link>
+    <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://mccracken-labs.github.io/SimplyChristianFellowship/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>A weekly devotional and reflection walking through the teachings of Jesus.</description>
+    <language>en-us</language>
+    <item>
+      <title>Only Christ Is Holy</title>
+      <link>https://mccracken-labs.github.io/SimplyChristianFellowship/blog/2026-08-02-only-christ-is-holy.html</link>
+      <guid isPermaLink="true">https://mccracken-labs.github.io/SimplyChristianFellowship/blog/2026-08-02-only-christ-is-holy.html</guid>
+      <pubDate>Sun, 02 Aug 2026 12:00:00 +0000</pubDate>
+      <description>No book, building, or person is holy in itself. Holiness belongs to God, and came near in one person.</description>
+    </item>
+  </channel>
+</rss>

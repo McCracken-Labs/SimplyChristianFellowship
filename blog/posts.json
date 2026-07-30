@@ -1,0 +1,522 @@
+[
+  {
+    "week": 1,
+    "date": "2026-08-02",
+    "file": "2026-08-02-only-christ-is-holy.html",
+    "title": "Only Christ Is Holy",
+    "devotional": "One is holy",
+    "scripture": "Luke 18:19",
+    "summary": "No book, building, or person is holy in itself. Holiness belongs to God, and came near in one person.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 2,
+    "date": "2026-08-09",
+    "file": "2026-08-09-scripture-as-a-window-not-an-idol.html",
+    "title": "Scripture as a Window, Not an Idol",
+    "devotional": "Through the glass",
+    "scripture": "John 5:39-40",
+    "summary": "The Bible points to Christ. Some end up worshipping the pages instead of following the person they describe.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 3,
+    "date": "2026-08-16",
+    "file": "2026-08-16-to-follow-is-simply-to-love.html",
+    "title": "To Follow Is Simply to Love",
+    "devotional": "A new command",
+    "scripture": "John 13:34-35",
+    "summary": "The heart of the whole thing, and the tagline of this fellowship.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 4,
+    "date": "2026-08-23",
+    "file": "2026-08-23-the-two-commands-that-hold-everything.html",
+    "title": "The Two Commands That Hold Everything",
+    "devotional": "On these two",
+    "scripture": "Matthew 22:37-40",
+    "summary": "Love God, love your neighbor. Jesus said all the rest hangs on these.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 5,
+    "date": "2026-08-30",
+    "file": "2026-08-30-who-jesus-said-he-was.html",
+    "title": "Who Jesus Said He Was",
+    "devotional": "The way",
+    "scripture": "John 14:6",
+    "summary": "Not a philosophy or a rulebook. A person to follow.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 6,
+    "date": "2026-09-06",
+    "file": "2026-09-06-the-beatitudes.html",
+    "title": "The Beatitudes",
+    "devotional": "Blessed are",
+    "scripture": "Matthew 5:3-10",
+    "summary": "Jesus blesses the poor, the mourning, the meek, the merciful. The kingdom turned upside down.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 7,
+    "date": "2026-09-13",
+    "file": "2026-09-13-salt-and-light.html",
+    "title": "Salt and Light",
+    "devotional": "Let it shine",
+    "scripture": "Matthew 5:13-16",
+    "summary": "Faith is meant to be tasted and seen, not hidden.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 8,
+    "date": "2026-09-20",
+    "file": "2026-09-20-turn-the-other-cheek.html",
+    "title": "Turn the Other Cheek",
+    "devotional": "No revenge",
+    "scripture": "Matthew 5:38-42",
+    "summary": "The hardest, plainest teaching about how to answer harm.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 9,
+    "date": "2026-09-27",
+    "file": "2026-09-27-love-your-enemies.html",
+    "title": "Love Your Enemies",
+    "devotional": "Even them",
+    "scripture": "Matthew 5:43-48",
+    "summary": "Anyone can love a friend. Christ asks for more.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 10,
+    "date": "2026-10-04",
+    "file": "2026-10-04-give-in-secret.html",
+    "title": "Give in Secret",
+    "devotional": "No trumpet",
+    "scripture": "Matthew 6:1-4",
+    "summary": "Real giving does not need an audience.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 11,
+    "date": "2026-10-11",
+    "file": "2026-10-11-how-to-pray-simply.html",
+    "title": "How to Pray Simply",
+    "devotional": "Our Father",
+    "scripture": "Matthew 6:5-13",
+    "summary": "Jesus gave a short, plain prayer and warned against showy ones.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 12,
+    "date": "2026-10-18",
+    "file": "2026-10-18-do-not-worry.html",
+    "title": "Do Not Worry",
+    "devotional": "Consider the birds",
+    "scripture": "Matthew 6:25-34",
+    "summary": "A word for anxious hearts about trust and enough.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 13,
+    "date": "2026-10-25",
+    "file": "2026-10-25-judge-not.html",
+    "title": "Judge Not",
+    "devotional": "The log and the speck",
+    "scripture": "Matthew 7:1-5",
+    "summary": "Deal with your own heart before you weigh anyone else's.",
+    "movement": "Foundations"
+  },
+  {
+    "week": 14,
+    "date": "2026-11-01",
+    "file": "2026-11-01-the-good-samaritan.html",
+    "title": "The Good Samaritan",
+    "devotional": "Who stopped",
+    "scripture": "Luke 10:25-37",
+    "summary": "The neighbor is whoever is bleeding in the road in front of you.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 15,
+    "date": "2026-11-08",
+    "file": "2026-11-08-welcome-the-stranger.html",
+    "title": "Welcome the Stranger",
+    "devotional": "Room at the table",
+    "scripture": "Matthew 25:35",
+    "summary": "On immigrants, outsiders, and the ones others turn away.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 16,
+    "date": "2026-11-15",
+    "file": "2026-11-15-feed-the-hungry.html",
+    "title": "Feed the Hungry",
+    "devotional": "I was hungry",
+    "scripture": "Matthew 25:35-40",
+    "summary": "Christ said He is met in the hungry person we feed.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 17,
+    "date": "2026-11-22",
+    "file": "2026-11-22-the-least-of-these.html",
+    "title": "The Least of These",
+    "devotional": "Whatever you did",
+    "scripture": "Matthew 25:40",
+    "summary": "A whole life measured by mercy shown with the hands.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 18,
+    "date": "2026-11-29",
+    "file": "2026-11-29-forgive-seventy-times-seven.html",
+    "title": "Forgive Seventy Times Seven",
+    "devotional": "No limit",
+    "scripture": "Matthew 18:21-22",
+    "summary": "Forgiveness that refuses to keep count.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 19,
+    "date": "2026-12-06",
+    "file": "2026-12-06-the-unforgiving-servant.html",
+    "title": "The Unforgiving Servant",
+    "devotional": "Mercy received",
+    "scripture": "Matthew 18:23-35",
+    "summary": "We forgive because we have been forgiven far more.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 20,
+    "date": "2026-12-13",
+    "file": "2026-12-13-the-prodigal-son.html",
+    "title": "The Prodigal Son",
+    "devotional": "The father ran",
+    "scripture": "Luke 15:11-32",
+    "summary": "A homecoming, and a love that does not wait to be earned.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 21,
+    "date": "2026-12-20",
+    "file": "2026-12-20-the-lost-sheep.html",
+    "title": "The Lost Sheep",
+    "devotional": "He goes after it",
+    "scripture": "Luke 15:3-7",
+    "summary": "No one is written off.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 22,
+    "date": "2026-12-27",
+    "file": "2026-12-27-blessed-are-the-merciful.html",
+    "title": "Blessed Are the Merciful",
+    "devotional": "Mercy for mercy",
+    "scripture": "Matthew 5:7",
+    "summary": "Why mercy sits at the center of the way.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 23,
+    "date": "2027-01-03",
+    "file": "2027-01-03-let-the-children-come.html",
+    "title": "Let the Children Come",
+    "devotional": "Do not stop them",
+    "scripture": "Matthew 19:14",
+    "summary": "The kingdom belongs to the small and the overlooked.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 24,
+    "date": "2027-01-10",
+    "file": "2027-01-10-wash-one-another-s-feet.html",
+    "title": "Wash One Another's Feet",
+    "devotional": "The lowest place",
+    "scripture": "John 13:12-17",
+    "summary": "Leadership in the kingdom looks like a servant with a towel.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 25,
+    "date": "2027-01-17",
+    "file": "2027-01-17-known-by-love.html",
+    "title": "Known by Love",
+    "devotional": "They will know",
+    "scripture": "John 13:35",
+    "summary": "The only badge Jesus gave His followers.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 26,
+    "date": "2027-01-24",
+    "file": "2027-01-24-bless-those-who-curse-you.html",
+    "title": "Bless Those Who Curse You",
+    "devotional": "A soft answer",
+    "scripture": "Luke 6:27-28",
+    "summary": "Returning kindness for hostility.",
+    "movement": "The Way of Love"
+  },
+  {
+    "week": 27,
+    "date": "2027-01-31",
+    "file": "2027-01-31-jesus-never-asked-for-a-tithe.html",
+    "title": "Jesus Never Asked for a Tithe",
+    "devotional": "Freely given",
+    "scripture": "2 Corinthians 9:7",
+    "summary": "Where the tithe came from, and what Christ asked for instead.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 28,
+    "date": "2027-02-07",
+    "file": "2027-02-07-the-widow-s-two-coins.html",
+    "title": "The Widow's Two Coins",
+    "devotional": "She gave more",
+    "scripture": "Mark 12:41-44",
+    "summary": "Generosity is measured by the heart, not the amount.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 29,
+    "date": "2027-02-14",
+    "file": "2027-02-14-the-camel-and-the-needle.html",
+    "title": "The Camel and the Needle",
+    "devotional": "The eye of a needle",
+    "scripture": "Mark 10:23-27",
+    "summary": "A hard word about wealth, and the hope inside it.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 30,
+    "date": "2027-02-21",
+    "file": "2027-02-21-the-rich-fool-and-his-barns.html",
+    "title": "The Rich Fool and His Barns",
+    "devotional": "Bigger barns",
+    "scripture": "Luke 12:16-21",
+    "summary": "Storing up for yourself while your neighbor goes without.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 31,
+    "date": "2027-02-28",
+    "file": "2027-02-28-you-cannot-serve-two-masters.html",
+    "title": "You Cannot Serve Two Masters",
+    "devotional": "God or money",
+    "scripture": "Matthew 6:24",
+    "summary": "One heart cannot bow to both.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 32,
+    "date": "2027-03-07",
+    "file": "2027-03-07-the-tables-in-the-temple.html",
+    "title": "The Tables in the Temple",
+    "devotional": "Overturned",
+    "scripture": "Matthew 21:12-13",
+    "summary": "The one time Jesus got angry, and why.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 33,
+    "date": "2027-03-14",
+    "file": "2027-03-14-prosperity-is-not-a-promise.html",
+    "title": "Prosperity Is Not a Promise",
+    "devotional": "No easy gospel",
+    "scripture": "Luke 9:23-24",
+    "summary": "Answering the preachers who sell blessing for donations.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 34,
+    "date": "2027-03-21",
+    "file": "2027-03-21-whoever-wants-to-be-great.html",
+    "title": "Whoever Wants to Be Great",
+    "devotional": "The servant of all",
+    "scripture": "Mark 10:42-45",
+    "summary": "Real greatness in the kingdom is service.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 35,
+    "date": "2027-03-28",
+    "file": "2027-03-28-render-unto-caesar.html",
+    "title": "Render Unto Caesar",
+    "devotional": "Two kingdoms",
+    "scripture": "Matthew 22:15-22",
+    "summary": "Faith is not a political weapon.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 36,
+    "date": "2027-04-04",
+    "file": "2027-04-04-not-of-this-world.html",
+    "title": "Not of This World",
+    "devotional": "A different kingdom",
+    "scripture": "John 18:36",
+    "summary": "Jesus refused earthly power every time it was offered.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 37,
+    "date": "2027-04-11",
+    "file": "2027-04-11-the-workers-in-the-vineyard.html",
+    "title": "The Workers in the Vineyard",
+    "devotional": "The same wage",
+    "scripture": "Matthew 20:1-16",
+    "summary": "Grace is not fair, and that is good news.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 38,
+    "date": "2027-04-18",
+    "file": "2027-04-18-treasure-in-heaven.html",
+    "title": "Treasure in Heaven",
+    "devotional": "Where your heart is",
+    "scripture": "Matthew 6:19-21",
+    "summary": "What you store points to what you love.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 39,
+    "date": "2027-04-25",
+    "file": "2027-04-25-sell-what-you-have.html",
+    "title": "Sell What You Have",
+    "devotional": "Open hands",
+    "scripture": "Luke 12:33",
+    "summary": "On loosening the grip of what we own.",
+    "movement": "Money, Power, and the Kingdom"
+  },
+  {
+    "week": 40,
+    "date": "2027-05-02",
+    "file": "2027-05-02-faith-without-works-is-dead.html",
+    "title": "Faith Without Works Is Dead",
+    "devotional": "Show me",
+    "scripture": "James 2:14-17",
+    "summary": "You can call yourself an astronaut, but you have to get off the ground.",
+    "movement": "Living It Out"
+  },
+  {
+    "week": 41,
+    "date": "2027-05-09",
+    "file": "2027-05-09-not-everyone-who-says-lord.html",
+    "title": "Not Everyone Who Says Lord",
+    "devotional": "Doing, not saying",
+    "scripture": "Matthew 7:21",
+    "summary": "Words are cheap. The Father looks at a life.",
+    "movement": "Living It Out"
+  },
+  {
+    "week": 42,
+    "date": "2027-05-16",
+    "file": "2027-05-16-known-by-their-fruit.html",
+    "title": "Known by Their Fruit",
+    "devotional": "By what grows",
+    "scripture": "Matthew 7:16-20",
+    "summary": "The proof of a faith is what it produces.",
+    "movement": "Living It Out"
+  },
+  {
+    "week": 43,
+    "date": "2027-05-23",
+    "file": "2027-05-23-the-house-on-the-rock.html",
+    "title": "The House on the Rock",
+    "devotional": "Two builders",
+    "scripture": "Matthew 7:24-27",
+    "summary": "Hearing the words is not the same as living them.",
+    "movement": "Living It Out"
+  },
+  {
+    "week": 44,
+    "date": "2027-05-30",
+    "file": "2027-05-30-the-veil-was-torn.html",
+    "title": "The Veil Was Torn",
+    "devotional": "No one in between",
+    "scripture": "Matthew 27:50-51",
+    "summary": "You do not need a gatekeeper to reach God.",
+    "movement": "Living It Out"
+  },
+  {
+    "week": 45,
+    "date": "2027-06-06",
+    "file": "2027-06-06-fellowship-without-walls.html",
+    "title": "Fellowship Without Walls",
+    "devotional": "That they be one",
+    "scripture": "John 17:20-23",
+    "summary": "Unity that holds difference without fear.",
+    "movement": "Living It Out"
+  },
+  {
+    "week": 46,
+    "date": "2027-06-13",
+    "file": "2027-06-13-doubt-is-welcome-here.html",
+    "title": "Doubt Is Welcome Here",
+    "devotional": "Thomas",
+    "scripture": "John 20:24-29",
+    "summary": "Honest questions are not the enemy of faith.",
+    "movement": "Living It Out"
+  },
+  {
+    "week": 47,
+    "date": "2027-06-20",
+    "file": "2027-06-20-test-everything.html",
+    "title": "Test Everything",
+    "devotional": "Hold to the good",
+    "scripture": "1 Thessalonians 5:21",
+    "summary": "Faith is not afraid of a hard question.",
+    "movement": "Living It Out"
+  },
+  {
+    "week": 48,
+    "date": "2027-06-27",
+    "file": "2027-06-27-the-heavens-declare.html",
+    "title": "The Heavens Declare",
+    "devotional": "Wonder",
+    "scripture": "Psalm 19:1",
+    "summary": "Science and faith explore the same creation.",
+    "movement": "Living It Out"
+  },
+  {
+    "week": 49,
+    "date": "2027-07-04",
+    "file": "2027-07-04-consider-the-lilies.html",
+    "title": "Consider the Lilies",
+    "devotional": "Look closely",
+    "scripture": "Matthew 6:28-29",
+    "summary": "Creation as a teacher of trust.",
+    "movement": "Living It Out"
+  },
+  {
+    "week": 50,
+    "date": "2027-07-11",
+    "file": "2027-07-11-come-to-me-all-who-are-weary.html",
+    "title": "Come to Me, All Who Are Weary",
+    "devotional": "Rest",
+    "scripture": "Matthew 11:28-30",
+    "summary": "A gentle word for the tired and the burdened.",
+    "movement": "Living It Out"
+  },
+  {
+    "week": 51,
+    "date": "2027-07-18",
+    "file": "2027-07-18-the-greatest-of-these-is-love.html",
+    "title": "The Greatest of These Is Love",
+    "devotional": "Love remains",
+    "scripture": "1 Corinthians 13:13",
+    "summary": "Everything else falls away. Love stays.",
+    "movement": "Living It Out"
+  },
+  {
+    "week": 52,
+    "date": "2027-07-25",
+    "file": "2027-07-25-simply-christian.html",
+    "title": "Simply Christian",
+    "devotional": "Walk humbly",
+    "scripture": "Micah 6:8",
+    "summary": "Circling back to the beginning: do justly, love mercy, walk humbly.",
+    "movement": "Living It Out"
+  }
+]

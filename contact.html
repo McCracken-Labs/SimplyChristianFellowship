@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('scf-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <meta name="theme-color" content="#418892">
-<title>Ways to Practice | Simply Christian Fellowship</title>
-<meta name="description" content="Simple, self-directed ways to live out Christ’s teachings. No calendar, no place required. Feed the hungry, forgive, welcome the stranger, serve without reward.">
+<title>Contact &amp; Prayer | Simply Christian Fellowship</title>
+<meta name="description" content="Send a message or a prayer request to Simply Christian Fellowship. You will be read, and you will not be added to any list.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ways to Practice | Simply Christian Fellowship">
-<meta property="og:description" content="Simple, self-directed ways to live out Christ’s teachings. No calendar, no place required. Feed the hungry, forgive, welcome the stranger, serve without reward.">
-<meta property="og:url" content="https://mccracken-labs.github.io/SimplyChristianFellowship/practice.html">
+<meta property="og:title" content="Contact &amp; Prayer | Simply Christian Fellowship">
+<meta property="og:description" content="Send a message or a prayer request to Simply Christian Fellowship.">
+<meta property="og:url" content="https://mccracken-labs.github.io/SimplyChristianFellowship/contact.html">
 <meta property="og:image" content="https://mccracken-labs.github.io/SimplyChristianFellowship/assets/logo-full.png">
 <meta property="og:site_name" content="Simply Christian Fellowship">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://mccracken-labs.github.io/SimplyChristianFellowship/practice.html">
+<link rel="canonical" href="https://mccracken-labs.github.io/SimplyChristianFellowship/contact.html">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +38,7 @@
       <li><a href="why.html">Why Simply Christian</a></li>
       <li><a href="beliefs.html">What We Believe</a></li>
       <li><a href="science-faith.html">Science &amp; Faith</a></li>
-      <li><a href="practice.html" class="active">Ways to Practice</a></li>
+      <li><a href="practice.html">Ways to Practice</a></li>
       <li><a href="blog/index.html">Blog</a></li>
     </ul>
     <div class="header-tools">
@@ -56,32 +56,47 @@
 <main id="main">
   <section class="section-tight" style="padding-top:3.5rem">
     <div class="wrap read center">
-      <p class="eyebrow">Ways to Practice</p>
-      <h1 style="color:var(--teal-dark)">The practice is ordinary life</h1>
-      <p class="lead">Simply Christian Fellowship is online for now, so there are no meetings to attend and no place you have to be. This faith isn’t meant to live inside an event. It lives in ordinary days and small choices.</p>
-    </div>
-  </section>
-  <section class="section-tight">
-    <div class="wrap">
-      <div class="wrap read center" style="padding:0 0 2.5rem">
-        <p>Here are simple, self-directed ways to live out Christ’s teachings, wherever you are, whenever you can. No calendar, no sign-up, no place required. Choose one today.</p>
-      </div>
-      <div class="practice">
-        <div class="card reveal"><h3>Feed someone who is hungry</h3><p>Buy a meal for a person who needs one, give to a food bank, or share what is in your kitchen. “I was hungry and you gave me something to eat.”</p></div>
-        <div class="card reveal"><h3>Forgive someone</h3><p>Let go of a grudge you have been carrying. Forgive without limit, as Christ taught, even when it isn’t deserved and even when it is only for your own peace.</p></div>
-        <div class="card reveal"><h3>Sit with the lonely</h3><p>Call the person no one calls. Visit someone who is alone. Presence is one of the kindest and simplest gifts you can offer.</p></div>
-        <div class="card reveal"><h3>Give quietly</h3><p>Help someone without letting anyone know it was you. Let the act be its own reward, the way Jesus asked us to give in secret.</p></div>
-        <div class="card reveal"><h3>Speak gently</h3><p>Bless those who are hard to bless. Choose kind words over being right. A soft answer can change someone’s whole day.</p></div>
-        <div class="card reveal"><h3>Welcome the stranger</h3><p>Make room for the person others overlook. Everyone belongs at the table. That was true of every table Jesus sat at.</p></div>
-        <div class="card reveal"><h3>Serve without reward</h3><p>Do a good thing that no one will thank you for. Serve as Christ served, expecting nothing back.</p></div>
-        <div class="card reveal"><h3>Rest and reflect</h3><p>Read the words of Jesus slowly. Sit quietly. Let compassion settle into you before you carry it back out into the world.</p></div>
-      </div>
+      <p class="eyebrow">Contact &amp; Prayer</p>
+      <h1 style="color:var(--teal-dark)">Reach out, or ask for prayer</h1>
+      <p class="lead">Send a note, a question, or a prayer request. A real person reads every message. You will not be added to any list, and nothing you share here is posted publicly.</p>
     </div>
   </section>
 
-  <section class="band">
-    <div class="wrap read center">
-      <p class="quote" style="border:none;padding:0;font-size:1.5rem">“Faith without works is lost. We are simply Christians by living out Christ’s teachings in the way we love, serve, and care for others.”</p>
+  <section class="section-tight" style="padding-top:1rem">
+    <div class="wrap">
+      <div class="form-wrap">
+        <!-- Formspree: replace YOUR_FORM_ID with your form id (https://formspree.io). The
+             handler in site.js submits by AJAX, so the visitor stays on the page. -->
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="field">
+            <label for="cf-name">Your name (optional)</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="cf-email">Email (only if you would like a reply)</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="cf-type">What is this?</label>
+            <select id="cf-type" name="type">
+              <option>A message or question</option>
+              <option>A prayer request</option>
+              <option>Just saying hello</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-message">Your message</label>
+            <textarea id="cf-message" name="message" required></textarea>
+          </div>
+          <div class="hp" aria-hidden="true">
+            <label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+          </div>
+          <div class="btn-row" style="justify-content:flex-start">
+            <button class="btn btn-primary" type="submit">Send</button>
+          </div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </div>
   </section>
 </main>
@@ -108,10 +123,10 @@
       <span>© 2026 Simply Christian Fellowship</span>
       <span>Only Christ is holy.</span>
     </div>
-      <p class="site-credit">
-        Design &amp; development by
-        <a href="https://mccracken-labs.github.io/mccrackenlandservices/labs/" target="_blank" rel="noopener">McCracken Labs</a>
-      </p>
+    <p class="site-credit">
+      Design &amp; development by
+      <a href="https://mccracken-labs.github.io/mccrackenlandservices/labs/" target="_blank" rel="noopener">McCracken Labs</a>
+    </p>
   </div>
 </footer>
 

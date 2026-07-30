@@ -294,5 +294,74 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
   html { scroll-behavior: auto; }
 }
 
+/* ---------- Blog: archive list ---------- */
+.post-list { display: grid; gap: 1.1rem; max-width: 52rem; margin: 0 auto; }
+.post-item {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+  padding: 1.5rem 1.7rem; transition: transform .14s, box-shadow .14s, border-color .14s;
+}
+.post-item:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: rgba(65,136,146,.4); }
+.post-meta { font-family: var(--sans); font-size: .74rem; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--teal); margin: 0 0 .4rem; display: flex; gap: .7rem; flex-wrap: wrap; }
+.post-meta .wk { color: var(--ink-soft); }
+.post-item h3 { color: var(--teal-dark); margin: 0 0 .4rem; font-size: 1.5rem; }
+.post-item p { margin: 0; color: var(--ink-soft); font-size: 1.05rem; line-height: 1.55; }
+
+/* ---------- Blog: single post ---------- */
+.post-head { text-align: center; max-width: 46rem; margin: 0 auto; }
+.post-head .post-meta { justify-content: center; }
+.post-body { max-width: var(--maxread); margin: 2.4rem auto 0; }
+.post-body h2 { margin-top: 2.4rem; }
+
+/* Devotional entry block */
+.devotional {
+  max-width: 40rem; margin: 0 auto; padding: 2.2rem 2rem; border-radius: 18px;
+  background: var(--cream-2); border: 1px solid var(--line);
+}
+.devotional .dev-label { text-align: center; font-family: var(--sans); font-size: .72rem; font-weight: 700;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--teal); margin: 0 0 1.2rem; }
+.dev-open, .dev-bless {
+  text-align: center; font-style: italic; font-size: 1.2rem; line-height: 1.55; color: var(--teal-deep);
+  margin: 1.2rem auto; max-width: 30rem;
+}
+html[data-theme="dark"] .dev-open, html[data-theme="dark"] .dev-bless { color: var(--teal-dark); }
+.dev-open cite, .dev-bless cite { display: block; font-style: normal; font-family: var(--sans);
+  font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); margin-top: .6rem; }
+.dev-ornament { text-align: center; color: var(--teal); opacity: .6; font-size: 1.1rem; margin: .2rem 0 1rem; }
+.dev-rule { border: none; border-top: 1px solid var(--line); max-width: 5rem; margin: 1.6rem auto; }
+.dev-practice { margin: 1.4rem 0 0; }
+.dev-practice b { color: var(--teal-dark); }
+
+/* ---------- Newsletter signup ---------- */
+.signup {
+  max-width: 40rem; margin: 3rem auto 0; text-align: center;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 2.2rem 2rem;
+}
+.signup h3 { color: var(--teal-dark); margin: 0 0 .5rem; }
+.signup p { color: var(--ink-soft); margin: 0 0 1.3rem; font-size: 1.02rem; }
+.signup-embed { min-height: 3rem; }
+.signup-form { display: flex; gap: .6rem; max-width: 26rem; margin: 0 auto; flex-wrap: wrap; }
+.signup-form input[type=email] {
+  flex: 1 1 12rem; padding: .8rem 1rem; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--cream); color: var(--ink); font-family: var(--serif); font-size: 1rem;
+}
+.signup-note { font-family: var(--sans); font-size: .72rem; color: var(--ink-soft); margin: .9rem 0 0; }
+
+/* ---------- Contact / prayer form ---------- */
+.form-wrap { max-width: 40rem; margin: 0 auto; }
+.field { margin-bottom: 1.1rem; text-align: left; }
+.field label { display: block; font-family: var(--sans); font-size: .8rem; font-weight: 600;
+  letter-spacing: .04em; color: var(--ink-soft); margin-bottom: .35rem; }
+.field input, .field textarea, .field select {
+  width: 100%; padding: .8rem 1rem; border-radius: 12px; border: 1px solid var(--line);
+  background: var(--paper); color: var(--ink); font-family: var(--serif); font-size: 1.05rem;
+}
+.field textarea { min-height: 9rem; resize: vertical; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-status { margin-top: 1rem; font-family: var(--sans); font-size: .92rem; min-height: 1.2rem; }
+.form-status.ok { color: var(--teal-dark); }
+.form-status.err { color: #b3543f; }
+
 /* misc */
 .mt-0{margin-top:0}.mb-0{margin-bottom:0}

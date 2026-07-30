@@ -64,7 +64,44 @@
     els.forEach(function (el) { io.observe(el); });
   }
 
+  // ---- Contact / prayer form (Formspree AJAX) ----
+  function initContactForm() {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    var status = form.querySelector('.form-status');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      // honeypot: if a bot filled the hidden field, pretend success and stop
+      var hp = form.querySelector('[name="_gotcha"]');
+      if (hp && hp.value) { show('ok', 'Thank you. Your message has been sent.'); return; }
+      if (form.action.indexOf('YOUR_FORM_ID') !== -1) {
+        show('err', 'The form is not connected yet. Please check back soon.');
+        return;
+      }
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; }
+      show('', 'Sending...');
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (r) {
+        if (r.ok) { form.reset(); show('ok', 'Thank you. Your message has been received.'); }
+        else { r.json().then(function (d) {
+          show('err', (d && d.errors && d.errors[0] && d.errors[0].message) || 'Something went wrong. Please try again.');
+        }).catch(function () { show('err', 'Something went wrong. Please try again.'); }); }
+      }).catch(function () {
+        show('err', 'Network error. Please try again in a moment.');
+      }).then(function () { if (btn) { btn.disabled = false; } });
+    });
+    function show(kind, msg) {
+      if (!status) return;
+      status.className = 'form-status' + (kind ? ' ' + kind : '');
+      status.textContent = msg;
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
-    initNav(); initTheme(); initLogoTop(); initReveal();
+    initNav(); initTheme(); initLogoTop(); initReveal(); initContactForm();
   });
 })();
