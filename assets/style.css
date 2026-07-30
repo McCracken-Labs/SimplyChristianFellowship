@@ -10,10 +10,46 @@
   --ink: #2c3335;
   --ink-soft: #55605f;
   --line: #e4ddce;
+  --header-bg: rgba(250,247,240,.88);
+  --footer-bg: #285c63;
+  --footer-ink: #d6e7ea;
+  --footer-muted: #a9c8cc;
+  --sky-fade: 250,247,240;   /* rgb of --cream, for hero scrim gradient */
   --shadow: 0 1px 2px rgba(40,60,60,.04), 0 8px 30px rgba(40,60,60,.06);
   --serif: "Crimson Pro", Georgia, "Times New Roman", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --maxread: 44rem;
+}
+
+/* ---------- Dark theme (opt-in, remembered) ---------- */
+html[data-theme="dark"] {
+  --teal: #5aa7b1;
+  --teal-dark: #8ed3db;
+  --teal-deep: #b6e2e8;
+  --cream: #10171a;
+  --cream-2: #16211f;
+  --paper: #1a2529;
+  --ink: #e6eeef;
+  --ink-soft: #a4b6b7;
+  --line: #2a3a3d;
+  --header-bg: rgba(16,23,26,.86);
+  --footer-bg: #0b1214;
+  --footer-ink: #d3e5e8;
+  --footer-muted: #7f9598;
+  --sky-fade: 16,23,26;
+  --shadow: 0 1px 2px rgba(0,0,0,.25), 0 10px 34px rgba(0,0,0,.4);
+}
+
+/* Color transition only when the user toggles, never on first paint */
+html.theme-anim,
+html.theme-anim body,
+html.theme-anim .site-header,
+html.theme-anim .card,
+html.theme-anim .verse,
+html.theme-anim .site-footer,
+html.theme-anim .btn-ghost,
+html.theme-anim main > section {
+  transition: background-color .38s ease, color .38s ease, border-color .38s ease;
 }
 
 * { box-sizing: border-box; }
@@ -39,16 +75,16 @@ a:hover { color: var(--teal-deep); }
 /* ---------- Header / Nav ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(250,247,240,.88);
+  background: var(--header-bg);
   backdrop-filter: saturate(140%) blur(10px);
   border-bottom: 1px solid var(--line);
 }
 .nav {
   max-width: 76rem; margin: 0 auto;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: .7rem 1.4rem; gap: 1rem;
+  display: flex; align-items: center; justify-content: flex-start;
+  padding: .7rem 1.4rem; gap: 1.1rem;
 }
-.brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--ink); }
+.brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--ink); margin-right: auto; }
 .brand img { width: 34px; height: auto; }
 .brand span { font-family: var(--serif); font-weight: 600; font-size: 1.28rem; letter-spacing: .1px; color: var(--teal-dark); line-height: 1.05; }
 .brand small { display:block; font-family: var(--sans); font-weight: 500; font-size: .62rem; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-soft); }
@@ -128,7 +164,7 @@ main > section.band-paper { background: var(--paper); }
   position: absolute; inset: 0; pointer-events: none;
   background:
     radial-gradient(62% 58% at 50% 42%, rgba(255,253,248,.34), rgba(255,253,248,0) 72%),
-    linear-gradient(to bottom, rgba(250,247,240,.28) 0%, rgba(250,247,240,.10) 42%, rgba(250,247,240,.70) 86%, var(--cream) 100%);
+    linear-gradient(to bottom, rgba(var(--sky-fade),.28) 0%, rgba(var(--sky-fade),.10) 42%, rgba(var(--sky-fade),.70) 86%, var(--cream) 100%);
 }
 .hero-content { position: relative; z-index: 1; }
 .hero .dove-mark {
@@ -178,7 +214,7 @@ main > section.band-paper { background: var(--paper); }
 
 /* pull quote / scripture */
 .quote {
-  font-style: italic; font-size: 1.5rem; line-height: 1.5; color: var(--teal-deep);
+  font-style: italic; font-size: 1.5rem; line-height: 1.5; color: var(--teal-dark);
   border-left: 3px solid var(--teal); padding: .3rem 0 .3rem 1.5rem; margin: 2rem 0;
 }
 .quote cite { display: block; font-style: normal; font-size: .82rem; font-family: var(--sans);
@@ -195,7 +231,7 @@ main > section.band-paper { background: var(--paper); }
 .practice .card h3 { font-size: 1.22rem; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--teal-deep); color: #d6e7ea; }
+.site-footer { background: var(--footer-bg); color: var(--footer-ink); }
 .site-footer a { color: #eaf4f5; }
 .footer-inner { max-width: 76rem; margin: 0 auto; padding: 3rem 1.4rem 2.4rem;
   display: grid; grid-template-columns: 1.4fr 1fr; gap: 2rem; }
@@ -217,6 +253,46 @@ main > section.band-paper { background: var(--paper); }
 .footer-bottom .fb { max-width: 76rem; margin: 0 auto; padding: 1.2rem 1.4rem; display:flex; justify-content: space-between; flex-wrap: wrap; gap:.5rem;
   font-family: var(--sans); font-size: .78rem; color: #a9c8cc; }
 @media (max-width: 640px){ .footer-inner { grid-template-columns: 1fr; } }
+
+/* ---------- Skip link ---------- */
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 200;
+  background: var(--teal-dark); color: #fff; padding: .7rem 1.1rem; border-radius: 0 0 10px 0;
+  font-family: var(--sans); font-size: .85rem; font-weight: 600; text-decoration: none;
+}
+.skip-link:focus { left: 0; }
+
+/* ---------- Header logo + theme toggle ---------- */
+.brand img { width: 40px; }              /* a touch larger, roomier header */
+.nav { padding: .85rem 1.4rem; }
+.logo-light { display: none; }
+html[data-theme="dark"] .logo-dark { display: none; }
+html[data-theme="dark"] .logo-light { display: inline-block; }
+
+.header-tools { display: flex; align-items: center; gap: .35rem; }
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 10px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--paper); color: var(--teal-dark);
+  transition: background .15s, color .15s, border-color .15s;
+}
+.theme-toggle:hover { border-color: var(--teal); color: var(--teal-deep); }
+.theme-toggle .icon-moon { display: none; }
+.theme-toggle .icon-sun { display: block; }
+html[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
+
+@media (max-width: 860px) {
+  .header-tools { margin-left: auto; }
+}
+
+/* ---------- Scroll reveal ---------- */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}
 
 /* misc */
 .mt-0{margin-top:0}.mb-0{margin-bottom:0}
