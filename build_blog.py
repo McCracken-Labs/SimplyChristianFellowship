@@ -41,6 +41,7 @@ NAV = '''    <ul class="nav-links">
       <li><a href="../beliefs.html">What We Believe</a></li>
       <li><a href="../science-faith.html">Science &amp; Faith</a></li>
       <li><a href="../practice.html">Ways to Practice</a></li>
+      <li><a href="../devotional.html">Devotional</a></li>
       <li><a href="index.html" class="active">Blog</a></li>
     </ul>'''
 
@@ -56,7 +57,8 @@ TOOLS = '''    <div class="header-tools">
 
 SIGNUP = '''      <div class="signup">
         <h3>Get the Sunday devotional</h3>
-        <p>A short devotional and reflection, sent once a week. No spam, and you can leave anytime.</p>
+        <p>New reflections each Sunday. Follow for free by RSS today, or add email once it is connected.</p>
+        <p style="margin:0 0 1.2rem"><a class="btn btn-ghost" href="../feed.xml">Subscribe by RSS</a></p>
         <div class="signup-embed" data-newsletter-embed>
           <!-- Newsletter embed goes here (Buttondown / Mailchimp / follow.it, etc.). Replace this block with your provider's form. -->
           <form class="signup-form" onsubmit="return false;" aria-label="Email signup (placeholder)">
@@ -90,7 +92,7 @@ archive = f'''<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=3">
+<link rel="stylesheet" href="../assets/style.css?v=4">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -144,7 +146,8 @@ archive = f'''<!DOCTYPE html>
       <a href="../beliefs.html">What We Believe</a>
       <a href="../science-faith.html">Science &amp; Faith</a>
       <a href="../practice.html">Ways to Practice</a>
-      <a href="index.html">Blog</a>
+      <a href="../devotional.html">Daily Devotional</a>
+      <a href="index.html">Sunday Blog</a>
       <a href="../contact.html">Contact &amp; Prayer</a>
     </nav>
   </div>
@@ -160,7 +163,7 @@ archive = f'''<!DOCTYPE html>
   </div>
 </footer>
 
-<script src="../assets/site.js?v=3"></script>
+<script src="../assets/site.js?v=4"></script>
 </body>
 </html>
 '''

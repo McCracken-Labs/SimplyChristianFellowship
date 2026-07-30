@@ -101,7 +101,34 @@
     }
   }
 
+  // ---- Daily devotional (rotates by day of year) ----
+  function initDailyDevotional() {
+    var mount = document.getElementById('daily-devotional');
+    if (!mount || !window.SCF_DEVOTIONALS || !window.SCF_DEVOTIONALS.length) return;
+    var list = window.SCF_DEVOTIONALS;
+    var now = new Date();
+    var start = new Date(now.getFullYear(), 0, 0);
+    var day = Math.floor((now - start) / 86400000);
+    var d = list[day % list.length];
+    var esc = function (s) {
+      return String(s).replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+      });
+    };
+    var today = now.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
+    var refl = d.reflection.map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('');
+    mount.innerHTML =
+      '<p class="dev-label">' + esc(today) + '</p>' +
+      '<p class="dev-ornament">❦</p>' +
+      '<h2 class="center mt-0" style="color:var(--teal-dark)">' + esc(d.title) + '</h2>' +
+      '<p class="dev-open">“' + esc(d.verse) + '”<cite>' + esc(d.ref) + '</cite></p>' +
+      '<hr class="dev-rule">' + refl +
+      '<p class="dev-practice"><b>Practice.</b> ' + esc(d.practice) + '</p>' +
+      '<hr class="dev-rule">' +
+      '<p class="dev-bless">' + esc(d.blessing) + '</p>';
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
-    initNav(); initTheme(); initLogoTop(); initReveal(); initContactForm();
+    initNav(); initTheme(); initLogoTop(); initReveal(); initContactForm(); initDailyDevotional();
   });
 })();
