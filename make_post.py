@@ -1,20 +1,37 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+"""Generate blog post HTML files from blog/content.json + blog/posts.json.
+content.json maps a week number (string) to an object:
+  { "lead": str, "verse": str, "ref": str,
+    "reflection": [str, ...], "practice": str, "blessing": str,
+    "essay": [ {"h2": str-or-empty, "paras": [str, ...]}, ... ] }
+Only weeks present in content.json are (re)written. Metadata (title, date,
+movement, file) comes from posts.json."""
+import json, os, datetime, html
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+posts = {p["week"]: p for p in json.load(open(os.path.join(ROOT, "blog/posts.json")))}
+content = json.load(open(os.path.join(ROOT, "blog/content.json")))
+
+def esc(s): return html.escape(s, quote=False)
+def fmt(d): return datetime.date.fromisoformat(d).strftime("%B %-d, %Y")
+
+HEAD = '''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>(function(){try{var t=localStorage.getItem('scf-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<script>(function(){{try{{var t=localStorage.getItem('scf-theme');if(t)document.documentElement.setAttribute('data-theme',t);}}catch(e){{}}}})();</script>
 <meta name="theme-color" content="#418892">
-<title>Blog &amp; Devotional | Simply Christian Fellowship</title>
-<meta name="description" content="A weekly devotional and reflection walking through the teachings of Jesus. A new entry each Sunday.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Blog &amp; Devotional | Simply Christian Fellowship">
-<meta property="og:description" content="A weekly devotional and reflection walking through the teachings of Jesus. A new entry each Sunday.">
-<meta property="og:url" content="https://mccracken-labs.github.io/SimplyChristianFellowship/blog/">
-<meta property="og:image" content="https://mccracken-labs.github.io/SimplyChristianFellowship/assets/logo-full.png">
+<title>{title} | Simply Christian Fellowship</title>
+<meta name="description" content="{desc}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{base}blog/{file}">
+<meta property="og:image" content="{base}assets/logo-full.png">
 <meta property="og:site_name" content="Simply Christian Fellowship">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://mccracken-labs.github.io/SimplyChristianFellowship/blog/">
+<link rel="canonical" href="{base}blog/{file}">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/favicon-180.png">
 <link rel="alternate" type="application/rss+xml" title="Simply Christian Fellowship" href="../feed.xml">
@@ -56,45 +73,10 @@
 </header>
 
 <main id="main">
-  <section class="section-tight" style="padding-top:3.5rem">
-    <div class="wrap read center">
-      <p class="eyebrow">Blog &amp; Devotional</p>
-      <h1 style="color:var(--teal-dark)">A word for each week</h1>
-      <p class="lead">A short devotional and a longer reflection, walking slowly through the teachings of Jesus. A new entry each Sunday.</p>
-    </div>
-  </section>
+  <article>
+'''
 
-  <section class="section-tight" style="padding-top:0.5rem">
-    <div class="wrap">
-      <div class="post-list">
-        <a class="post-item reveal" href="2026-08-02-only-christ-is-holy.html">
-          <p class="post-meta"><span>Week 1</span><span class="wk">Foundations</span><span>August 2, 2026</span></p>
-          <h3>Only Christ Is Holy</h3>
-          <p>No book, building, or person is holy in itself. Holiness belongs to God, and came near in one person.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-tight" style="padding-top:0">
-    <div class="wrap">
-      <div class="signup">
-        <h3>Follow the Sunday reflections</h3>
-        <p>A new reflection each Sunday, always free. Follow the feed in any reader and each one comes to you, at no cost.</p>
-        <p style="margin:0"><a class="btn btn-ghost" href="../feed.xml">Subscribe by RSS</a></p>
-        <details class="rss-help">
-          <summary>New to RSS? Here is how to follow along</summary>
-          <div class="rss-body">
-            <p>RSS is a free way to get new posts automatically, with no account to create if you would rather not. Pick whichever way feels easier.</p>
-            <p><b>Get new posts by email.</b> Open a free service such as Blogtrottr or follow.it, paste the feed address below, and enter your email. Each new Sunday reflection then arrives in your inbox on its own. Nothing to install.</p>
-            <p><b>Use a reader app.</b> Install a free app such as Feedly or Inoreader, tap Add feed or Subscribe, and paste the same address. New posts gather there for whenever you want them.</p>
-            <p><b>The feed address to paste</b><br><code>https://mccracken-labs.github.io/SimplyChristianFellowship/feed.xml</code></p>
-            <p>The daily devotional has its own page that changes every day. The easiest way to follow it is to bookmark the <a href="../devotional.html">Daily Devotional</a> page and open it each morning.</p>
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
+FOOT = '''  </article>
 </main>
 
 <footer class="site-footer">
@@ -131,3 +113,58 @@
 <script defer src="../js/count.js" data-endpoint="https://scissortail.mccrackenlabs.workers.dev" data-site="simplychristian"></script>
 </body>
 </html>
+'''
+
+BASE = "https://mccracken-labs.github.io/SimplyChristianFellowship/"
+
+def build(week, c):
+    p = posts[int(week)]
+    refl = "\n          ".join("<p>%s</p>" % esc(x) for x in c["reflection"])
+    essay = []
+    for blk in c["essay"]:
+        if blk.get("h2"):
+            essay.append("        <h2>%s</h2>" % esc(blk["h2"]))
+        for para in blk["paras"]:
+            essay.append("        <p>%s</p>" % esc(para))
+    essay_html = "\n".join(essay)
+    head = HEAD.format(title=esc(p["title"]), desc=esc(c["lead"]), base=BASE, file=p["file"])
+    body = f'''    <section class="section-tight" style="padding-top:3.2rem;padding-bottom:1rem">
+      <div class="wrap post-head">
+        <p class="post-meta"><span>Week {p['week']}</span><span class="wk">{esc(p['movement'])}</span><span>{fmt(p['date'])}</span></p>
+        <h1 style="color:var(--teal-dark)">{esc(p['title'])}</h1>
+        <p class="lead">{esc(c['lead'])}</p>
+      </div>
+    </section>
+
+    <section class="section-tight" style="padding-top:1rem">
+      <div class="wrap">
+        <div class="devotional reveal">
+          <p class="dev-label">This Week&rsquo;s Devotional</p>
+          <p class="dev-ornament">&#10086;</p>
+          <p class="dev-open">&ldquo;{esc(c['verse'])}&rdquo;<cite>{esc(c['ref'])}</cite></p>
+          <hr class="dev-rule">
+          {refl}
+          <p class="dev-practice"><b>Practice.</b> {esc(c['practice'])}</p>
+          <hr class="dev-rule">
+          <p class="dev-bless">{esc(c['blessing'])}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" style="padding-top:0.5rem">
+      <div class="wrap post-body article">
+{essay_html}
+      </div>
+    </section>
+
+    <section class="section-tight" style="padding-top:0">
+      <div class="wrap">
+        <p class="center" style="margin-top:1rem"><a class="btn btn-ghost" href="index.html">&larr; All posts</a></p>
+      </div>
+    </section>
+'''
+    open(os.path.join(ROOT, "blog", p["file"]), "w", encoding="utf-8").write(head + body + FOOT)
+    return p["file"]
+
+for wk, c in content.items():
+    print("wrote", build(wk, c))

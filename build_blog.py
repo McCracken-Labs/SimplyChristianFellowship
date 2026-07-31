@@ -166,6 +166,7 @@ archive = f'''<!DOCTYPE html>
 </footer>
 
 <script src="../assets/site.js?v=6"></script>
+<script defer src="../js/count.js" data-endpoint="https://scissortail.mccrackenlabs.workers.dev" data-site="simplychristian"></script>
 </body>
 </html>
 '''
