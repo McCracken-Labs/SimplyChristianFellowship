@@ -646,8 +646,8 @@ window.SCF_DEVOTIONALS = [
     "ref": "Luke 15:7, KJV",
     "verse": "I say unto you, that likewise joy shall be in heaven over one sinner that repenteth, more than over ninety and nine just persons, which need no repentance.",
     "reflection": [
-      "Jesus describes heaven celebrating harder over one person who turns around than over ninety nine who never wandered. That is strange math if you think faith is about staying perfectly on track. It only makes sense once you understand how much God wants each person found, including the ones who have been gone a long time.",
-      "If you have ever felt like you wandered too far to be welcomed back, this verse is aimed at you. Your return is met with celebration. Think of someone you assume has wandered too far from faith, and consider what it would take to welcome them back without conditions attached."
+      "Jesus tells a story about a shepherd who leaves ninety nine sheep to go find the one that wandered off, and when he finds it he throws a party. That is strange math if you are counting by the numbers. It makes sense the moment you picture someone you love gone missing, and what it would feel like to have them found.",
+      "If you have ever felt like you wandered too far to be welcomed back, this story is about you. Nobody in it asks the missing one to explain where they have been before they are picked up and carried home. Think of someone you assumed was too far gone, and imagine what it would take to welcome them back with no conditions attached."
     ],
     "practice": "Reach out today to someone you assumed was too far gone to bother contacting.",
     "blessing": "May you believe that your return is met with joy."
