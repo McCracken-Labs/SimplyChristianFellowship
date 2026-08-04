@@ -150,7 +150,7 @@ p { margin: 0 0 1.15rem; }
 }
 .hero-video {
   position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover; object-position: center 42%;
+  object-fit: cover; object-position: center 70%;
 }
 /* Save data and respect motion preferences: show the still poster instead */
 @media (prefers-reduced-motion: reduce) { .hero-video { display: none; } }
