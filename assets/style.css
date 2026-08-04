@@ -146,9 +146,15 @@ p { margin: 0 0 1.15rem; }
    section is opaque and scrolls up over this stationary image. */
 .hero-bg {
   position: fixed; inset: 0; z-index: -1;
-  background: url("hero-sky.jpg") center 42% / cover no-repeat;
-  background-color: var(--cream);
+  background: var(--cream) url("hero-poster.jpg") center 42% / cover no-repeat;
 }
+.hero-video {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center 42%;
+}
+/* Save data and respect motion preferences: show the still poster instead */
+@media (prefers-reduced-motion: reduce) { .hero-video { display: none; } }
+@media (max-width: 768px) { .hero-video { display: none; } }
 
 /* Opaque sections cover the fixed background as you scroll */
 main > section { background: var(--cream); }
