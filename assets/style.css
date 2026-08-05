@@ -393,3 +393,5 @@ html[data-theme="dark"] .dev-open, html[data-theme="dark"] .dev-bless { color: v
 
 /* misc */
 .mt-0{margin-top:0}.mb-0{margin-bottom:0}
+
+html[data-theme="dark"] .hero h1{color:#20484e}html[data-theme="dark"] .hero .tagline{color:#1c434a}html[data-theme="dark"] .hero .lead{color:#33403f}
